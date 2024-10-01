@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Josefin Sans", sans-serif;
+}
+/******navbar****/
+.navbar-custom {
+    background-color: #000 !important;
+}
+
+.nav_logo {
+    margin-top:-9px;
+    width: 36px;
+    margin-right: 6px;
+}
+
+.navbar-brand {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 23px !important;
+    color: #eeffff !important;
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff;
+    font-weight: 500;
+}
+
+.nav_items_home {
+    margin: 4px 0px !important;
+    color: #eee !important;
+    font-weight: 500;
+}
+
+.nav_items_home:hover {
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff;
+}
+
+.contact_us_page_container {
+    background-image: url("https://cdn.pixabay.com/photo/2024/02/26/14/13/computer-8598079_960_720.jpg");
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+}
+
+.contact_card_main {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+}
+
+.subsubsub_contact_uscont {
+    justify-content: space-between;
+}
+
+.heading_contact_us {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1rem 0.5rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+}
+
+.para_contact_us {
+    color: #e6e6e6;
+    font-size: 0.84rem;
+    text-align: center;
+}
+
+/*second card*/
+.heading_contact_main {
+    color: black;
+    font-size: 1.4rem;
+    margin: 10px;
+}
+
+.card_address_contact {
+    display: flex;
+    padding: 6px;
+    max-height: 20vh;
+}
+
+.highliht_address_text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.address_contact_us {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #6b6b6b;
+    min-width: 45%;
+}
+
+.map_contact_us_container {
+    margin: 10px;
+    margin-top: 28px;
+}
+
+.map_contact {
+    height: 100%;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* thirsd container*/
+.oursocialMedia_links_heading {
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.links_contact_us_container {
+    background: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.li_item_contact_us_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone_li_links_contactUs {
+    color: #3d8cff;
+}
+
+.para_list_item_contact_us {
+    font-size: 0.5rem;
+    color: white;
+    margin: 3px;
+}
+
+.icont_mobile_contact,
+.icont_youtube_contact,
+.icont_mail_contact,
+.icont_instagram_contact,
+.icont_linkedin_contact,
+.icont_whatsapp_contact,
+.icont_facebook_contact {
+    color: #3d8cff;
+    border-radius: 50%;
+    margin: 0.1rem 0.2rem;
+}
+
+.icont_mobile_contact {
+    color: #5298ff;
+}
+
+.icont_youtube_contact {
+    color: red;
+}
+
+.icont_whatsapp_contact {
+    color: #25D366;
+}
+
+.icont_mail_contact {
+    color: #55ACEE;
+    max-height: 1rem;
+}
+
+.icont_facebook_contact {
+    color: #1877F2;
+    background: white;
+    border-radius: 50%;
+}
+
+.icont_instagram_contact {
+    color: white;
+    padding: 2px;
+    font-size: 0.7rem;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #F9CE34, #EE2A7B, #6228D7);
+}
+
+.icont_linkedin_contact {
+    color: #0762C8;
+}
+
+.links_contact_us_container div {
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.links_contact_us_container div:hover {
+    transform: scale(1.25);
+    margin: 0% 2%;
+}
+
+.heading_weAre_available_contact {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 1rem;
+}
+
+.hours_avail_para {
+    font-size: 0.9rem;
+    color: #21457b;
+    margin-left: 30px;
+}
+
+.avail_contact_days {
+    font-size: 1.1rem;
+    color: #ff0039;
+}
+/*button faq*/
+.bttonContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.heading_codeinf_qheries_faq{
+    font-size:1.4rem;
+}
+.faq_button{
+outline: 0;
+grid-gap: 8px;
+align-items: center;
+background-color: #ffffff;
+color: #000;
+border: 1px solid #000;
+border-radius: 4px;
+cursor: pointer;
+display: inline-flex;
+flex-shrink: 0;
+font-size: 16px;
+font-weight:600;
+gap: 8px;
+justify-content: center;
+line-height: 1.5;
+overflow: hidden;
+padding: 12px 20px;
+text-decoration: none;
+text-overflow: ellipsis;
+transition: all .14s ease-out;
+white-space: nowrap;
+}
+.faq_button:hover {
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px,-4px);
+}
+.faq_button:focus-visible{
+    outline-offset: 1px;
+}
+.specialtxt_part1_cpnteactus{
+    color:rgb(1, 34, 35);
+}
+@media only screen and (min-width:668px) {
+    .faq_button{
+        padding:10px 34px;
+    }
+    /*****nav bar*******/
+    .navbar-brand {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.8rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    .nav_logo {
+        width: 55px;
+        height: 100%;
+        margin-top:-13px;
+    }
+
+    .nav_icons {
+        margin-bottom: -2px !important;
+    }
+
+    .nav_items_home {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+    /*****main**/
+    .contact_us_page_container {
+        background-image: url("../assets/contactusbanner.png");
+        height: 50vh;
+        background-position: center;
+    }
+
+    .contact_card_main {
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+
+    .heading_contact_us {
+        font-size: 3.5rem;
+        text-shadow: 0px 0px 13px rgb(225, 225, 225), 0px 0px 13px rgb(211, 211, 211);
+        margin: 1rem 2rem;
+        
+    }
+    .specialtxt_part1_cpnteactus{
+        color:rgb(1, 34, 35);
+        text-shadow:0px 0px 18px #48f8ff,0px 0px 18px #48f8ff;
+    }
+
+    .para_contact_us {
+        font-size: 1.45rem;
+    }
+
+    /*second card*/
+    .heading_contact_main {
+        font-size: 2.2rem;
+        margin: 20px;
+    }
+
+    .card_address_contact {
+        padding: 6px 20rem;
+        height: 100%;
+    }
+
+    .highliht_address_text {
+        font-size: 1.6rem;
+    }
+
+    .address_contact_us {
+        font-size: 1.2rem;
+    }
+
+    .collection_maps_container {
+        display: flex;
+        margin-top: 10rem;
+    }
+
+    .map_contact {
+        height: 160%;
+        border-radius: 10px;
+        max-width: 100%;
+        margin: 1rem;
+        border: 1px solid grey;
+    }
+
+    /* thirsd container*/
+    .oursocialMedia_links_heading {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+
+    .links_contact_us_container {
+        padding: 2rem 5rem;
+    }
+
+    .li_item_contact_us_links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .phone_li_links_contactUs {
+        color: #3d8cff;
+    }
+
+    .para_list_item_contact_us {
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+
+    .icont_mobile_contact,
+    .icont_youtube_contact,
+    .icont_mail_contact,
+    .icont_instagram_contact,
+    .icont_linkedin_contact,
+    .icont_whatsapp_contact,
+    .icont_facebook_contact {
+        color: #3d8cff;
+        border-radius: 50%;
+        font-size: 2.2rem;
+        margin: 0.1rem 0.2rem;
+    }
+
+    .icont_mobile_contact {
+        color: #5298ff;
+    }
+
+    .icont_youtube_contact {
+        color: red;
+    }
+
+    .icont_whatsapp_contact {
+        color: #25D366;
+    }
+
+    .icont_mail_contact {
+        color: #55ACEE;
+        min-height: 2.1rem;
+        max-height: 2.3rem;
+    }
+
+    .icont_facebook_contact {
+        color: #1877F2;
+        background: white;
+        border-radius: 50%;
+    }
+
+    .icont_instagram_contact {
+        color: white;
+        padding: 2px;
+        font-size: 2.3rem;
+        border-radius: 2px;
+        background-image: linear-gradient(to right, #F9CE34, #EE2A7B, #6228D7);
+    }
+
+    .icont_linkedin_contact {
+        color: #0762C8;
+    }
+
+    .links_contact_us_container div {
+        transition: 0.2s ease-in;
+        cursor: pointer;
+    }
+
+    .links_contact_us_container div:hover {
+        transform: scale(1.25);
+        margin: 0% 2%;
+    }
+
+    .heading_weAre_available_contact {
+        font-size: 2rem;
+        margin-top: 20rem;
+        margin-left: 1rem;
+    }
+
+    .hours_avail_para {
+        font-size: 1.2rem;
+        color: #21457b;
+        margin-left: 30px;
+    }
+
+    .avail_contact_days {
+        font-size: 1.4rem;
+        color: #ff0039;
+    }
+    .collectino_icons_footer .fa {
+        transition: 0.2s ease-in;
+    }
+}

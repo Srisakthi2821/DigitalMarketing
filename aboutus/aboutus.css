@@ -1,0 +1,1466 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    padding-top: 50px;
+}
+
+* {
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/******navbar****/
+.navbar-custom {
+    background-color: black !important;
+}
+
+.nav_logo {
+    margin-top:-9px;
+    width: 36px;
+    margin-right: 6px;
+}
+
+.navbar-brand {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 23px !important;
+    color: #eeffff !important;
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff;
+    font-weight: 500;
+}
+
+.nav_items_home {
+    margin: 4px 0px !important;
+    color: #eee !important;
+    font-weight: 500;
+}
+
+.nav_items_home:hover {
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff;
+}
+
+/************abuot us *****************/
+
+.about_Us_section {
+    background: white;
+    padding-top: 70px;
+    overflow-y: hidden;
+}
+
+.about_Us_heading {
+    color: #b12525;
+    font-size: 1.2rem;
+}
+
+.container_aboutus_part1 {
+    display: flex;
+}
+
+.container_institution_Mission_about {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.container_abouts_topimg {
+        overflow: hidden;
+    }
+
+    .u-text {
+        transition: 0.5s ease;
+        fill: #074cb2;
+        height: 300px;
+        width: 100%;
+        transform: translateY(0px);
+        animation: aboutus_animation_part1 1.5s linear;
+        position: relative;
+
+    }
+
+    @keyframes aboutus_animation_part1 {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        75% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .container_abouts_topimg {
+        position: relative;
+        padding-top:20px;
+    }
+    .img_aboutus_part1_image {
+        height: 280px;
+        width: 280px;
+        border-radius: 100%;
+        position: absolute;
+        border: 1px solid #d5d5d5;
+        left: 6%;
+        top: 1%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: image_aboutus_part1 linear 1s;
+    }
+
+    @keyframes image_aboutus_part1 {
+        0% {
+            transform: translateY(-500px);
+        }
+
+        20% {
+            transform: translateY(-400px);
+            opacity:0.5;
+        }
+
+        35% {
+            transform: translateY(-20px);
+            opacity:0.6;
+        }
+
+        40% {
+            transform: translateY(0px);
+            opacity:0.5;
+        }
+
+        60% {
+            transform: translateY(-50px);
+            opacity:1;
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .imgAboutus_main {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image_about_us_history_card {
+        max-height: 30%;
+        max-width: 30%;
+    }
+
+    .image_about_us_history_card_sangamSoftSol {
+        max-height: 250px;
+        max-width: 20%;
+    }
+
+    .cardS_collection_aboutus_container {
+        display: flex;
+        flex-direction: row;
+    }
+    .aboutus_part2_card2{
+        order:0;
+        margin-top:20px;
+    }
+    .part_svg_aboutus{
+        fill:#3B4455;
+    }
+    .part2_aboutus_cont{
+        height: 250px;
+        width: 250px;
+        border-radius: 100%;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        border: 1px solid #d5d5d5;
+        background-color:white;
+        left: 9%;
+        top: 7%;
+    }
+    .part2_aboutus_img{
+        width: auto;
+        height: 80%;
+        object-fit: cover;
+    }
+.founded_abouts_highlight_Text {
+    color: #074cb2;
+    font-weight:bold;
+    font-size: 1.5rem;
+}
+.part2Heading_aboutus{
+    color:#3B4455;
+}
+.paragraph_about_card_history {
+    font-size: 0.9rem;
+    color: rgb(48, 47, 47);
+    margin: 0.3rem;
+    align-self: center;
+}
+
+.image_about_us_history_card {
+    width: 100%;
+    align-items: center;
+    margin: 0px;
+}
+
+.hrLine_aboutus {
+    border: 0.005rem solid #202020;
+    margin: 0.2rem 0.5rem;
+    width: 100%;
+}
+
+.image_about_us_history_card_sangamSoftSol {
+    height: 100%;
+    width: 100%;
+    margin-right: 4px;
+    min-height: 100px;
+    min-width: 130px;
+    align-self: center;
+}
+
+.paragraph_about_card_history_sangam_found {
+    font-size: 0.8rem;
+    color: rgb(67, 67, 67);
+}
+
+
+.founded_abouts_highlight_Text_sangam {
+    font-size: 1rem;
+    color: #282828;
+}
+
+.card_ourMission {
+    padding: 10px;
+}
+
+.heading_about_mission {
+    font-size: 1.4rem;
+    color: #151515;
+}
+
+.cardS_collection_aboutus_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards_mission_about_us_container {
+    background: #eee;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 5px;
+    padding: 8px;
+    min-height: 140px;
+    max-height: 160px;
+    cursor: pointer;
+    min-width: 46%;
+    max-width: 46%;
+}
+
+.card_aboutus_icons {
+    font-size: 3rem;
+    margin: 0.3rem;
+}
+
+.card_mission_aboutus {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.cards_mission_about_us_container {
+    transition: 1s ease-in linear;
+}
+
+.cards_mission_about_us_container:hover .card_aboutus_icons {
+    color: #51360f;
+}
+
+.cards_mission_about_us_container:hover {
+    box-shadow: 2px 2px 1px 4px #ffd43b;
+    border-radius: 0px;
+}
+
+#about_us_mis_card1:hover #laptop_icon_aboutUs {
+    color: #017127;
+}
+
+#about_us_mis_card1:hover {
+    box-shadow: 2px 2px 1px 4px #22b052;
+    border-radius: 0px;
+}
+
+.last_card_miss_aboutus {
+    max-width: 99%;
+    align-self: center;
+}
+
+#about_us_mis_card3:hover #icons_third_card {
+    color: #EB007F;
+}
+
+#about_us_mis_card3:hover {
+    box-shadow: 2px 2px 1px 4px #EB007F;
+}
+
+.paragraph_home_main {
+    color: #333333;
+    font-size: 0.7rem;
+    font-family: "Poppins", sans-serif;
+    margin: 9px;
+}
+
+.hilighted_Para_home {
+    color: #272727;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+/*******cards variation transition***********/
+.card_aboutus_icons {
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.cardS_collection_aboutus_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the items */
+    margin: 10px 0;
+}
+
+.ag-courses_item {
+    flex-basis: calc(50% - 20px);
+    /* 2 items per row */
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+    min-height: 300px;
+    min-width: 200px;
+    border-radius: 10px;
+}
+
+.ag-courses-item_link {
+    display: block;
+    padding: 10px 15px;
+    background-color: #121212;
+    overflow: hidden;
+    position: relative;
+}
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+    text-decoration: none;
+    color: #000;
+}
+
+.ag-courses-item_link:hover .ag-courses-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+
+.ag-courses-item_bg:hover .card_aboutus_icons {
+    z-index:3;
+}
+
+.ag-courses-item_title {
+    min-height: 87px;
+    margin: 0 0 10px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFF;
+    z-index: 3;
+    position: relative;
+}
+
+.ag-courses-item_date-box {
+    font-size: 1rem;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+
+.ag-courses-item_date {
+    font-weight: bold;
+    color: #f9b234;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
+}
+
+.ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+    z-index: 0;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#laptop_aboutUs {
+    color: #f9b234;
+}
+
+.ag-courses-item_link:hover .card_aboutus_icons {
+    color: black !important;
+}
+
+#card_2_aboutUs {
+    margin-top: -100px;
+}
+
+#card_3_aboutUs {
+    margin-top: -100px;
+}
+
+#card_transform_2_aboutus {
+    background-color: #23974b;
+}
+
+#lightBulb_aboutus {
+    color: #23974b;
+}
+
+#card_transform_3_aboutus {
+    background-color: #ff0081;
+}
+
+#icons_third_card {
+    color: #ff0081;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 639px) {
+
+    /*****nav bar*******/
+    .navbar-brand {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.8rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    .nav_logo {
+        width: 55px;
+        margin-top:-13px;
+        height: 100%;
+    }
+
+    .nav_icons {
+        margin-bottom: -2px !important;
+    }
+
+    .nav_items_home {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+
+    /**********ABOUT US*************/
+    .about_Us_section {
+        padding: 10;
+    }
+
+    .ag-courses_item {
+        flex-basis: calc(100% - 20px);
+    }
+
+    .about_Us_heading {
+        font-size: 1.8rem;
+    }
+
+    .founded_abouts_highlight_Text {
+        font-size: 1.5rem;
+        color: #555555;
+        font-weight: 500;
+    }
+
+    .aboutus_part1_card_head {
+        color: #0a5ba0;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-left: 100px;
+        margin-bottom: -50px;
+    }
+    .wholePart_aboutsus_cards{
+        overflow:hidden;
+        padding:0px 70px;
+    }
+    .hrLine_aboutus{
+        margin:20px;
+    }
+    .paragraph_about_card_history {
+        font-size: 1.3rem;
+        max-width: 50vw;
+        margin-left: 100px;
+        margin-right: -100px;
+        text-align: left;
+    }
+
+    .container_abouts_topimg {
+        overflow: hidden;
+    }
+
+    .u-text {
+        transition: 0.5s ease;
+        fill: #0a5ba0;
+        height: 400px;
+        width: 100%;
+        transform: translateY(0px);
+        animation: aboutus_animation_part1 1.5s linear;
+        position: relative;
+
+    }
+
+    @keyframes aboutus_animation_part1 {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        75% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+
+    }
+
+    .container_abouts_topimg {
+        order: 2;
+        position: relative;
+    }
+
+    .img_aboutus_part1_image {
+        margin-top: -20px;
+        height: 370px;
+        width: 370px;
+        border-radius: 100%;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        border: 1px solid #d5d5d5;
+        left: 7%;
+        top: 5%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: image_aboutus_part1 linear 1s;
+    }
+
+    @keyframes image_aboutus_part1 {
+        0% {
+            transform: translateY(-500px);
+        }
+
+        40% {
+            transform: translateY(-350px);
+            opacity:0.5;
+        }
+
+        60% {
+            transform: translateY(-20px);
+            opacity:0.6;
+        }
+
+        70% {
+            transform: translateY(0px);
+            opacity:0.5;
+        }
+
+        80% {
+            transform: translateY(-50px);
+            opacity:1;
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+
+    .imgAboutus_main {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .image_about_us_history_card {
+        max-height: 30%;
+        max-width: 30%;
+    }
+
+    .image_about_us_history_card_sangamSoftSol {
+        max-height: 250px;
+        max-width: 20%;
+    }
+
+    .cardS_collection_aboutus_container {
+        display: flex;
+        flex-direction: row;
+    }
+    .aboutus_part2_card2{
+        order:0;
+        margin-top:-20px;
+    }
+    .part_svg_aboutus{
+        fill:#3B4455;
+    }
+    .part2_aboutus_cont{
+        height: 350px;
+        width: 350px;
+        border-radius: 100%;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        border: 1px solid #d5d5d5;
+        left: 10%;
+        top:10%;
+    }
+    .part2_aboutus_img{
+        width: auto;
+        height: 80%;
+        object-fit: cover;
+    }
+    .part2Heading_aboutus{
+        font-size:2.5rem;
+        font-weight:bold;
+        
+    }
+    .paragraph_about_card_history_sangam_found {
+        font-size: 1.3rem;
+        margin: 10px;
+        margin-right:100px;
+        max-width:40vw;
+    }
+    
+    .heading_about_mission {
+        font-size: 1.6rem;
+    }
+
+    .ag-courses_item {
+        max-width: 30%;
+        min-height: 500px !important;
+    }
+
+    #card_1_aboutUs {
+        margin: 10px;
+    }
+
+    #card_2_aboutUs {
+        margin: 10px;
+    }
+
+    #card_3_aboutUs {
+        margin: 10px;
+    }
+
+    .card_aboutus_icons {
+        font-size: 3.5rem;
+    }
+
+    .ag-courses-item_date-box {
+        font-size: 1.5rem;
+    }
+
+    #card_3_text_des_aboutus {
+        font-size: 1.1rem;
+    }
+
+    .bg_last_texts_well_aboutus {
+        margin-top: -260px;
+    }
+
+    .hilighted_Para_home {
+        font-size: 2.4rem;
+    }
+
+    .paragraph_home_main {
+        font-size: 1.2rem;
+    }
+
+    .image_about_us_history_card {
+        max-height: 100%;
+        max-width: 14vw;
+        margin-right: 150px;
+        margin-top: -10px;
+    }
+
+    .paragraph_about_card_history {
+        font-size: 1.5rem;
+        padding: 10px 200px 10px 10px;
+    }
+
+    .paragraph_about_card_history_sangam_found {
+        font-size: 1.5rem;
+        margin-left: 70px;
+    }
+
+}
+
+/******faculty mem*****/
+
+.faculty_members_container {
+    background: white;
+    padding: -20rem;
+}
+
+.heading_main_fac_mem {
+    font-size: 1.1rem;
+    color: #8b1f1f;
+}
+
+.heading_highlighted_fac_mem {
+    color: #363636;
+    font-size: 1.3rem;
+}
+
+.para_fac_mem {
+    font-size: 0.7rem;
+    color: #323232;
+}
+
+.fa-graduation-cap {
+    font-size: 1.2rem;
+}
+
+/****card********/
+.container_fac_mem {
+    max-width: 900px;
+    display: flex;
+}
+
+.card-wrapper_fac_mem {
+    width: 400px;
+    height: 500px;
+    position: relative;
+}
+
+.card_fac_mem {
+    position: absolute;
+    left: 50%;
+    width: 60%;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 230px;
+}
+
+
+.no_Faculty_mem {
+    position: fixed;
+    margin: 20px;
+    background: white;
+    border-radius: 50%;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    padding: 2px 8px 2px 8px;
+    font-size: 1.2rem;
+}
+
+.card-image_fac_mem {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.card-image_fac_mem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.card_fac_mem:hover .card-image_fac_mem {
+    transform: translateY(-300px);
+    transition: all .9s;
+}
+
+.card_fac_mem:hover .View_text_faculty {
+    display: none;
+}
+
+.social-icons_fac_mem {
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+    transition: .4s;
+}
+
+.social-icons_fac_mem li {
+    overflow-y: hidden;
+    list-style: none;
+    transition: .4s;
+}
+
+.social-icons_fac_mem li a {
+    overflow-y: hidden;
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 60%;
+    text-align: center;
+    background: #fff;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 3px;
+    transition: .4s;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.card_fac_mem:hover .social-icons_fac_mem li a {
+    transform: translateY(0px);
+    overflow-y: hidden;
+    opacity: 1;
+}
+
+.social-icons_fac_mem li a:hover {
+    transition: .2s;
+}
+
+.social-icons_fac_mem li a .fab_fac_mem {
+    transition: .3s;
+}
+
+.social-icons_fac_mem li a:hover .fab_fac_mem {
+    transform: rotateY(360deg);
+    color: #fff;
+}
+
+.social-icons_fac_mem li a:hover .fa-facebook-f {
+    color: #1877F2;
+}
+
+.social-icons_fac_mem li a:hover .fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-icons_fac_mem li a:hover .fa-twitter {
+    color: #3a98da;
+}
+
+.social-icons_fac_mem li a:hover .fa-dribbble {
+    color: #ff89f2;
+}
+
+
+
+.card_fac_mem:hover li:nth-child(1) a {
+    transition-delay: 0.1s;
+}
+
+.card_fac_mem:hover li:nth-child(2) a {
+    transition-delay: 0.2s;
+}
+
+.card_fac_mem:hover li:nth-child(3) a {
+    transition-delay: 0.3s;
+}
+
+.card_fac_mem:hover li:nth-child(4) a {
+    transition-delay: 0.4s;
+}
+
+.details_fac_mem {
+    position: absolute;
+    margin-top: 55px;
+    background: #fff;
+    width: 100%;
+    height: 320px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+}
+
+.details_fac_mem h2 {
+    padding: 0;
+    margin: 4px 10px;
+    font-size: 0.8rem;
+}
+
+.content_high_fac_mem {
+    font-size: 1.5rem;
+    margin: 4px 10px;
+}
+
+.job-title_fac_mem {
+    text-align:center;
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+    color: #000;
+    font-weight: 300;
+}
+
+.skills_list_facMem {
+    margin-left: 30px;
+    margin-top: -30px;
+    list-style-type: circle;
+    font-size: 0.6rem;
+}
+
+
+.content_high_fac_mem_exp {
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: 4px 10px;
+}
+
+.para_exp_facmem {
+    font-size: 0.6rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.content_high_fac_mem_exp {
+    font-size: 1.4rem;
+}
+
+.list_item_skills_facMem {
+    font-size: 0.6rem;
+    color: #5b0303;
+    margin: 0px 10px;
+}
+
+.list_values_card_aboutus {
+    color: rgb(63, 62, 62);
+    font-size: 0.5rem;
+}
+
+.content_high_fac_mem_exp {
+    font-size: 0.6rem;
+}
+
+.View_text_faculty {
+    all: unset;
+    background: black;
+    color: white;
+    border-radius: 2px;
+    padding: 5px 8px;
+    line-height: 15px;
+    font-size: 0.8rem;
+    position: absolute;
+    letter-spacing: 0.5px;
+    margin: 5px;
+    bottom: 0%;
+    right: 30%;
+}
+
+@media only screen and (min-width:668px) {
+
+    .hilighted_Para_home {
+        font-size: 1.6rem;
+        font-family: "Josefin Sans", sans-serif;
+    }
+
+    .paragraph_home_main {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.1rem;
+    }
+
+    .container_cards_fac_mem {
+        display: flex;
+        flex-direction: row;
+        margin-left:130px;
+        flex-wrap: wrap;
+        gap: 1rem;
+        overflow-y: hidden;
+        transition: 0.6s ease linear;
+    }
+
+    .container_fac_mem {
+        height: 750px;
+        min-width: 20%;
+        transition: 0.5s ease-in;
+    }
+    .card-wrapper_fac_mem{
+        transition:0.5s;
+    }
+    .card-wrapper_fac_mem:hover{
+        transform:scale(1.05);
+
+    }
+
+    .faculty_members_container {
+        padding: 1.3rem;
+    }
+
+    .heading_main_fac_mem {
+        font-size: 1.7rem;
+    }
+
+    .list_item_skills_facMem {
+        font-size: 0.6rem;
+        color: #5b0303;
+        font-weight: 500;
+    }
+
+    .list_values_card_aboutus {
+        font-family: 'roboto';
+        font-size: 0.5rem;
+        font-weight: 400;
+        color: rgb(63, 62, 62);
+    }
+
+    .heading_highlighted_fac_mem {
+        font-size: 2.5rem;
+    }
+
+    .container_par2Desc {
+        margin-top: 40px;
+    }
+
+    .para_fac_mem {
+        font-size: 1.5rem;
+    }
+
+    .container_cards_fac_mem {
+        overflow-y: hidden;
+        display: flex;
+    }
+
+    .card_fac_mem {
+        width: 60%;
+        height: 350px;
+        margin-top: 260px;
+        transform: translate(-50%, -50%);
+        border-radius: 6px;
+    }
+
+    .no_Faculty_mem {
+        position: fixed;
+        margin: 20px;
+        font-size: 1.4rem;
+    }
+
+    .card_fac_mem:hover .card-image_fac_mem {
+        transform: translateY(-300px);
+        transition: all .9s;
+    }
+
+    .social-icons_fac_mem {
+        top: 10%;
+    }
+
+    .social-icons_fac_mem li a {
+        overflow-y: hidden;
+        position: relative;
+        display: block;
+        width: 200px;
+        height: 70%;
+        text-align: center;
+        background: #fff;
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+        margin: 0 3px;
+        transition: .4s;
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    .details_fac_mem {
+        position: absolute;
+        overflow-y: scroll;
+        background: #fff;
+    }
+
+    .details_fac_mem h2 {
+        padding: 0;
+        margin: 6px 14px;
+        font-size: 1.2rem;
+    }
+
+    .container_fac_mem_exp_tstyle {
+        margin-top: 1px;
+        scrollbar-width: thin;
+        scrollbar-color: #000000 transparent;
+    }
+
+    .content_high_fac_mem {
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin: 6px 14px;
+    }
+
+    .job-title_fac_mem {
+        text-align:center;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        color: #000;
+        font-weight: 300;
+    }
+
+    .skills_list_facMem {
+        list-style-type: circle;
+        font-size: 0.8rem;
+    }
+
+    .content_high_fac_mem_exp {
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin: 4px 10px;
+    }
+
+    .skills_heading {
+        font-size: 20px;
+        height: 100%;
+        color: black;
+    }
+
+    .para_exp_facmem {
+        font-size: 0.6rem;
+        font-style: italic;
+        color: rgb(38, 38, 38);
+    }
+
+    .heading_main_fac_mem {
+        font-size: 1.6rem;
+    }
+
+    .para_fac_mem {
+        font-size: 1.2rem;
+    }
+
+    .button_viewMore_card_faculty:hover {
+        background: rgb(39, 39, 39);
+    }
+
+    .skills_list_facMem,
+    .content_high_fac_mem,
+    .content_high_fac_mem {
+        height: 100%;
+    }
+
+    .content_high_fac_mem {
+        margin-top: -50px;
+        font-weight: 600;
+    }
+
+    .skills_list_facMem {
+        margin-top: -290px;
+    }
+
+    .container_fac_mem_exp_tstyle {
+        margin-top: -20px;
+    }
+
+    .goBottonButton {
+        all: unset;
+        color: black;
+        font-size: 20px;
+        position: fixed;
+        top: 50%;
+        right: 50%;
+        font-weight: 600;
+        transform: translateY(-10px);
+        height: 100%;
+        animation: godownButtno 2s infinite;
+    }
+
+    @keyframes godownButtno {
+        50% {
+            transform: translateY(2px);
+        }
+
+        95% {
+            transform: translateY(-3px);
+        }
+    }
+
+    .hiddenArrow {
+        display: none;
+    }
+
+    .unorderedList_skills {
+        margin: 0px 10px;
+    }
+
+    .margin_top_card_md {
+        margin-top: -350px;
+    }
+}
+
+/* footer*******/
+.footer_main_container {
+    background: black;
+}
+
+.part_one_footer {
+    background: #141414;
+    padding: 0.8rem;
+}
+
+.image_footer_logo {
+    max-height: 11rem;
+}
+
+.para_address_footer {
+    font-size: 0.8rem;
+    color: #dcdcdc;
+}
+
+.collectino_icons_footer {
+    padding: 15px 10px 10px 10px;
+}
+
+.collectino_icons_footer .fa {
+    transition: 0.2s ease-in;
+}
+
+.heading_footer_folow_us,
+.subscribe_heading_footer {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.footer_social_media_facebook,
+.footer_social_media_twitter,
+.footer_social_media_googleplus,
+.footer_social_media_instagram,
+.footer_social_media_linkedin {
+    background-color: #3B5998;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    margin: 0.1rem 0.2rem;
+}
+
+.footer_social_media_twitter {
+    background-color: #55ACEE;
+    padding: 12px 12px;
+}
+
+.footer_social_media_googleplus {
+    background-color: #DD4B39;
+    padding: 12px 10px;
+}
+
+.footer_social_media_linkedin {
+    background-color: #0976B4;
+    padding: 12px 13px;
+}
+
+.footer_social_media_instagram {
+    background: #B7242A;
+    padding: 12px 13px;
+}
+
+.collectino_icons_footer .fa:hover {
+    transform: scale(1.2);
+}
+
+/*part2---footer*/
+.part_two_footer {
+    padding: 1rem;
+}
+
+.calling_footer_cont_1 {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.calling_footer_cont_1 i {
+    align-self: center;
+    margin: 10px;
+    margin-top: -10px;
+    font-size: 1.5rem;
+}
+
+.container_mobile_para_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_footer_1 {
+    font-size: 1rem;
+    color: white;
+}
+
+.para_mobile_give_us_a_call {
+    color: white;
+    font-size: 0.7rem;
+    margin-top: -10px;
+    margin-left: 8px;
+}
+
+.para_subscribe_footer_2 {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer_input_text_ {
+    background-image: url("data:image/png;base64,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");
+    background-size: 40px;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: -5px 10px;
+    background-color: #2E2E2E;
+    border: none;
+    border-radius: 10px;
+    min-width: 70%;
+    padding: 0.5rem 1rem;
+    padding-right: 40px;
+    color: white;
+    outline: none;
+}
+
+.hrline_footer {
+    border: 1px solid #9d9d9d;
+}
+
+/*part 3*/
+.part_three_footer {
+    padding: 1rem;
+    margin: 2rem 0rem;
+}
+
+.address_footer_cont_3 {
+    display: flex;
+}
+
+.part_three_footer i {
+    align-self: center;
+    margin-top: -20px;
+    font-size: 1.5rem;
+}
+
+.container_links_footer {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container_links_part {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_links {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #9d9d9d;
+    margin: 6px 8px;
+}
+
+.footer_links:hover {
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+/*last part*/
+.last_part_footer {
+    background-color: #1d1c1c;
+    padding: 10px 1rem;
+    margin-top: -35px;
+}
+
+.footer_copyright_text {
+    font-size: 0.8rem;
+    color: #b2b2b2;
+}
+
+.last_footer {
+    font-size: 0.6rem;
+    margin: 0px 10px;
+}
+
+@media only screen and (min-width:688px) {
+
+    /*footer part*/
+    .footer_main_container {
+        display: flex;
+        padding: 0rem 15rem;
+        margin-top: -20px;
+        padding-bottom: 10px;
+    }
+
+    .collectino_icons_footer {
+        display: flex;
+        margin: 20px 5px;
+    }
+
+    .hrline_footer {
+        transform: rotate(180deg);
+    }
+
+    .footer_input_text_ {
+        font-size: 1rem;
+    }
+
+    .part_one_footer {
+        max-width: 30%;
+        margin-top: -20px;
+        max-height: 40%;
+    }
+
+    .part_two_footer {
+        max-width: 35%;
+        order: 1;
+    }
+
+    .part_three_footer {
+        max-width: 30%;
+        order: 0;
+    }
+
+    .part_two_footer {
+        padding: 3rem;
+    }
+
+    .last_part_footer {
+        display: flex;
+        padding: 10px 6rem;
+        background-color: #141414;
+        justify-content: space-between;
+    }
+
+    .footer_copyright_text {
+        font-size: 0.9rem;
+    }
+
+    .collectino_icons_footer {
+        padding: 5px 10px 10px 10px;
+    }
+
+    .last_footer {
+        font-size: 0.9rem;
+    }
+}

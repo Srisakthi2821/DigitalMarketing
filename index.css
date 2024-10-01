@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    overflow-x: hidden !important;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.home_main_container{
+    background-color: white;
+    height:100%;
+    padding:0px 10px 20px 5px;
+}
+/******navbar****/
+.navbar-custom {
+    background-color: #000 !important;
+}
+
+.nav_logo {
+    width: 36px;
+    margin-top:-9px;
+    margin-right: 6px;
+}
+
+.navbar-brand {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 23px !important;
+    color: #eeffff !important;
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff;
+    font-weight: 500;
+}
+
+.nav_items_home {
+    margin: 4px 0px !important;
+    color: #eee !important;
+    font-weight: 500;
+}
+
+.nav_items_home:hover {
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff;
+}
+
+/********logo_body*********/
+.wellcome_home_Container {
+    padding-top: 100px;
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.logo_code_Infinite {
+    width: 100%;
+}
+
+.wellcome_text_main {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.home_Page_contents {
+    padding: 8px;
+}
+
+.specified_TExt_cf {
+    font-size: 1.7rem;
+    color: #0a5b9f;
+    text-shadow:0px 0px 14px #8da2c2,0px 0px 28px #e7e8e9;
+
+}
+
+.paragraph_home_main {
+    color: #000;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.codeInfinite_Para {
+    font-size: 1.2rem;
+}
+
+.hilighted_Para_home {
+    color: #e44123;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: "Radio Canada Big", sans-serif;
+}
+
+/*button Home****/
+.button_Home_container {
+    display: flex;
+    justify-content: center;
+}
+
+.button_Home_courses {
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 1px;
+    background: #224d89;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding: 7px 40px;
+}
+
+.button_Home_courses:hover {
+    box-shadow: 0px 0px 5px #fe5455;
+}
+
+.button_Home_courses::after {
+    content: "Learn !";
+    height: 30px;
+    width: 100px;
+    background-color: #cf3031;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(50px);
+    font-size: 0.8rem;
+    padding: 2px 5px 5px 5px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.button_Home_courses::before {
+    content: "Courses";
+    height: 30px;
+    width: 100px;
+    background-color: #224d89;
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.button_Home_courses:hover::after {
+    transform: translateY(0) scale(1.2);
+}
+
+.button_Home_courses:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+}
+
+.Wellcome_text_home {
+    color: #e44123;
+    font-size: 1.3rem;
+    margin-top: 6px;
+}
+
+/*******courses container*********/
+.AboutUs_Container {
+    background: #0d1f3b;
+    height: 50vh;
+
+}
+
+.CoursesHome_card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card_home_courses_para{
+    color:white;
+    font-family: "Josefin Sans", sans-serif;
+}
+.Card_courses_home {
+    display: flex;
+    max-width: 500px;
+    gap: 20px;
+    background: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: transform 0.2s ease, z-index 0s 0.2s;
+}
+
+.Card_courses_home:hover {
+}
+
+.image_courses_home_card {
+    width: 100%;
+    max-height: 500px;
+}
+
+.card_up_courses {
+    background: #b12525;
+    padding: 8px;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    border-radius: 6px;
+    margin-bottom: -26px;
+    min-width: 100%;
+    overflow: hidden;
+    align-self: center;
+}
+
+.paragraph_home_main {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10px;
+    margin: 6px;
+}
+
+.course_card_top_ht {
+    color: white;
+    font-size: 18px;
+}
+
+.para_top_up_para {
+    font-size: 12px;
+    margin-top: -10px;
+    color: #ffd4d4;
+}
+/*youtube video*****/
+.container_youtube_embedded{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.heading_home_youtube{
+    font-size:1.2rem;
+    color:#224d89;
+    align-self:flex-start;
+    font-weight:500;
+    margin:20px 8px 10px;
+}
+.card_iframe_youtube_vid{
+    background:black;
+    padding:10px;
+    border-radius:6px;
+    height:100%;
+    align-self:flex-start;
+    align-content: start;
+}
+.video_subsctibe_text{
+    color:#bf3320;
+    font-style:italic;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Media Queries */
+
+/* footer*******/
+.footer_main_container {
+    background: black;
+}
+
+.part_one_footer {
+    background: #141414;
+    padding: 0.8rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.image_footer_logo {
+    max-height: 11rem;
+}
+
+.para_address_footer {
+    font-size: 0.8rem;
+    color: #dcdcdc;
+}
+
+.collectino_icons_footer .fa {
+    transition: 0.2s ease-in;
+}
+.heading_footer_folow_us{
+    margin-bottom:-10px;
+}
+.heading_footer_folow_us,
+.subscribe_heading_footer {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.footer_social_media_facebook,
+.footer_social_media_twitter,
+.footer_social_media_googleplus,
+.footer_social_media_instagram,
+.footer_social_media_linkedin {
+    background-color: #3B5998;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    margin: 0.1rem 0.2rem;
+}
+
+.footer_social_media_twitter {
+    background-color: #55ACEE;
+    padding: 12px 12px;
+}
+
+.footer_social_media_googleplus {
+    background-color: #DD4B39;
+    padding: 12px 10px;
+}
+
+.footer_social_media_linkedin {
+    background-color: #0976B4;
+    padding: 12px 13px;
+}
+
+.footer_social_media_instagram {
+    background: #B7242A;
+    padding: 12px 13px;
+}
+
+.collectino_icons_footer .fa:hover {
+    transform: scale(1.2);
+}
+
+/*part2---footer*/
+.part_two_footer {
+    padding: 1rem;
+}
+
+.calling_footer_cont_1 {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.calling_footer_cont_1 i {
+    align-self: center;
+    margin: 10px;
+    margin-top: -10px;
+    font-size: 1.5rem;
+}
+
+.container_mobile_para_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_footer_1 {
+    font-size: 1rem;
+    color: white;
+}
+
+.para_mobile_give_us_a_call {
+    color: white;
+    font-size: 0.7rem;
+    margin-top: -10px;
+    margin-left: 8px;
+}
+
+.para_subscribe_footer_2 {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer_input_text_ {
+    background-image: url("data:image/png;base64,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");
+    background-size: 40px;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: -5px 10px;
+    background-color: #2E2E2E;
+    border: none;
+    border-radius: 10px;
+    min-width: 70%;
+    padding: 0.5rem 1rem;
+    padding-right: 40px;
+    color: white;
+    outline: none;
+}
+
+.hrline_footer {
+    border: 1px solid #9d9d9d;
+}
+
+/*part 3*/
+.part_three_footer {
+    padding: 1rem;
+    margin: 2rem 0rem;
+}
+
+.address_footer_cont_3 {
+    display: flex;
+}
+
+.part_three_footer i {
+    align-self: center;
+    margin-top: -20px;
+    font-size: 1.5rem;
+}
+
+.container_links_footer {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container_links_part {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_links {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #9d9d9d;
+    margin: 6px 8px;
+}
+
+.footer_links:hover {
+    color: #d1d1d1;
+    text-decoration: none;
+}
+.collectino_icons_footer{
+    padding:15px 10px 10px 10px;
+}
+/*last part*/
+.last_part_footer {
+    background-color: #1d1c1c;
+    padding: 10px 1rem;
+    margin-top: -35px;
+}
+
+.footer_copyright_text {
+    font-size: 0.8rem;
+    color: #b2b2b2;
+}
+
+.last_footer {
+    font-size: 0.6rem;
+    margin: 0px 10px;
+}
+.collectino_icons_footer{
+    padding:15px 10px 10px 10px;
+    margin-top:-20px;
+}
+@media only screen and (min-width:688px) {
+    /*footer part*/
+    
+    .footer_main_container {
+        display: flex;
+        padding: 0rem 15rem;
+        margin-top:-20px;
+        padding-bottom:10px;
+    }
+    .collectino_icons_footer{
+        display:flex;
+        margin:20px 5px;
+    }
+
+    .hrline_footer {
+        transform: rotate(180deg);
+    }
+    .footer_input_text_{
+        font-size:1rem;
+    }
+
+    .part_one_footer {
+        max-width: 30%;
+        margin:0px 30px;
+        margin-top:-20px;
+        max-height:40%;
+    }
+
+    .part_two_footer {
+        max-width: 35%;
+        order: 1;
+        margin:0px 30px;
+
+    }
+
+    .part_three_footer {
+        max-width: 30%;
+        order: 0;
+        margin:0px 30px;
+
+    }
+
+    .part_two_footer {
+        padding: 3rem;
+    }
+
+    .last_part_footer {
+        display: flex;
+        padding: 10px 6rem;
+        background-color:#141414;
+        justify-content: space-between;
+    }
+
+    .footer_copyright_text {
+        font-size: 0.9rem;
+    }
+
+    .last_footer {
+        font-size: 0.9rem;
+    }
+    .collectino_icons_footer .fa {
+        transition: 0.2s ease-in;
+    }
+}
+@media only screen and (min-width:668px) {
+    .wellcome_home_Container {
+        display: flex;
+    }
+
+    /*****nav bar*******/
+    .navbar-brand {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.8rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    .nav_logo {
+        width: 55px;
+        margin-top:-13px;
+        height: 100%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .nav_icons {
+        margin-bottom: -2px !important;
+    }
+
+    .nav_items_home {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+    /****home container****/
+    .logo_main_home_container {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo_code_Infinite {
+        max-width: 90%;
+        height: 100%;
+        margin-top: 100px;
+    }
+
+    .home_address_text {
+        color: #232c3b;
+        font-size: 1rem;
+        margin: 20px;
+        line-height: 35px;
+        margin-left: 30px;
+        max-width:300px;
+    }
+    .ourAnotherBranchText{
+        color:#cc3400;
+        font-size:1.2rem;
+    }
+
+    .contact_info {
+        font-size: 1.2rem;
+        color: #cc3400;
+    }
+
+    .home_Page_contents {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wellcome_text_main {
+        font-size: 2.7rem
+    }
+
+    .specified_TExt_cf {
+        font-size: 3rem;
+    }
+
+    .paragraph_home_main {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1rem;
+    }
+
+    .codeInfinite_Para {
+        font-size: 1.5rem;
+    }
+
+    .CoursesHome_card {
+        min-width: 60%;
+    }
+
+    .Card_courses_home {
+        min-width: 100%;
+    }
+
+    .CoursesHome_card {
+        align-self: center;
+    }
+
+    .course_card_top_ht {
+        font-size: 24px;
+    }
+
+    .image_courses_home_card {
+        max-height: 700px;
+    }
+
+    .para_top_up_para {
+        font-size: 14px;
+    }
+
+    .paragraph_home_main {
+        font-size: 18px;
+        font-family: "Josefin Sans", sans-serif;
+    }
+    #card2:hover #card1{
+        transform:translateY(-10px);
+    }
+
+    .button_Home_courses {
+        height: 45px;
+        width: 125px;
+    }
+
+    .container_card_texts_course {
+        align-self: center;
+    }
+
+    .button_Home_courses::after {
+        height: 45px;
+        width: 125px;
+        font-size: 1.1rem;
+    }
+
+    .button_Home_courses::before {
+        height: 45px;
+        width: 125px;
+        font-size: 1.1rem;
+    }
+
+    .Wellcome_text_home {
+        font-size: 3rem;
+    }
+    /*youtube video*****/
+    .container_youtube_embedded{
+        padding:24px 16px 10px ;
+        align-items:flex-start;
+    }
+    .heading_home_youtube{
+        font-size:1.5rem;
+        margin:3rem 1rem 1rem 1rem;
+    }
+    .youtube_recent_video_home{
+        min-height:350px;
+        max-height:900px;
+        width:40%;
+        margin:1rem 3rem;
+    }
+    
+    /*footer part*/
+    .footer_main_container {
+        display: flex;
+        padding: 0rem 15rem;
+        margin-top:-20px;
+        padding-bottom:10px;
+    }
+    .collectino_icons_footer{
+        display:flex;
+        margin:20px 5px;
+    }
+
+    .hrline_footer {
+        transform: rotate(180deg);
+    }
+    .footer_input_text_{
+        font-size:1rem;
+    }
+
+    .part_one_footer {
+        max-width: 30%;
+        margin-top:-20px;
+        max-height:40%;
+    }
+
+    .part_two_footer {
+        max-width: 35%;
+        order: 1;
+    }
+    .footer_links{
+        font-size:1rem;
+    }
+    .container_links_footer{
+        padding:10px;
+        width:110%;
+    }
+    
+    .part_three_footer {
+        max-width: 30%;
+        order: 0;
+    }
+
+    .part_two_footer {
+        padding: 3rem;
+    }
+
+    .last_part_footer {
+        display: flex;
+        padding: 10px 6rem;
+        background-color:#141414;
+        justify-content: space-between;
+    }
+
+    .footer_copyright_text {
+        font-size: 0.9rem;
+    }
+
+    .last_footer {
+        font-size: 0.9rem;
+    }
+    .collectino_icons_footer .fa {
+        transition: 0.2s ease-in;
+    }
+    #card2:hover{
+        transform:translateY(-17px);
+    }
+
+}

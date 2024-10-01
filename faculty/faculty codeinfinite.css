@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+    background: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/******navbar****/
+.navbar-custom {
+    background-color: red!important;
+}
+
+.nav_logo {
+    margin-top:-9px;
+    width: 36px;
+    margin-right: 6px;
+}
+
+.navbar-brand {
+    font-family: "Afacad", sans-serif;
+    font-size: 23px !important;
+    color: #eeffff !important;
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff;
+    font-weight: 500;
+}
+
+.nav_items_home {
+    margin: 4px 0px !important;
+    color: #eee !important;
+    font-weight: 500;
+}
+
+.nav_items_home:hover {
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff;
+}

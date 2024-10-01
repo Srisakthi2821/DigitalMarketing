@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    padding-top:50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Josefin Sans", sans-serif;
+}
+/******navbar****/
+.navbar-custom {
+    background-color: #000 !important;
+}
+
+.nav_logo {
+    margin-top:-9px;
+    width: 36px;
+    margin-right: 6px;
+}
+
+.navbar-brand {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 23px !important;
+    color: #eeffff !important;
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff;
+    font-weight: 500;
+}
+
+.nav_items_home {
+    margin: 4px 0px !important;
+    color: #eee !important;
+    font-weight: 500;
+}
+
+.nav_items_home:hover {
+    text-shadow: 0px 0px 10px #3b89dc, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff, 0px 0px 15px #1a89ff;
+}
+/***********/
+.container_main_courses_page {
+    background: white;
+    padding: 1.4rem;
+    color: black;
+}
+
+.courses_sub_heading,
+.courses_main_heading {
+    font-size: 0.8rem;
+    font-family: "Noto Sans", sans-serif;
+    color: #183784;
+    font-weight: 500;
+}
+
+.courses_main_heading {
+    font-size: 1.2rem;
+    color: #b12525;
+}
+
+.para_courses_sub,
+.para_courses_main {
+    font-size: 0.9rem;
+    color: #183784;
+}
+
+.para_courses_main {
+    font-size: 0.7rem;
+    color: black;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+    perspective: 550px;
+    margin: 20px 4px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    box-shadow: 0px 0px 18px 5px #b1b1b1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #787878;
+}
+
+.card-front {
+    background-color: #6A2C70;
+    color: #fff;
+    border-radius: 7px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    background-image: url('../assets/courses/c++\ programming\ dark.png');
+    background-size: cover;
+    background-color: black;
+    border-radius: 7px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+}
+
+.front_image_course_card {
+    height: 100%;
+    width: 100%;
+}
+
+.heading_card_back_courses {
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    background: black;
+    padding: 10px;
+    width: 100%;
+}
+
+.paragraph_card_back_courses {
+    font-size: 0.7rem;
+    color: white;
+    padding: 10px;
+}
+
+.smalldevices {
+    left: 40%;
+    top: 88%;
+    position: absolute;
+    outline: none;
+    padding: 0px 18px;
+    font-size: 0.8rem;
+    background: black;
+    color: white;
+    border: 1px solid #979797;
+}
+
+.cplusplus_card_background {
+    background-image: url("../assets/courses/c++\ programming\ dark.png");
+}
+
+.Java_card_background {
+    background: url("../assets/courses/java\ programming\ dark.png");
+    background-size: cover;
+}
+
+.python_card_background {
+    background-image: url('../assets/courses/python\ programming\ dark.png');
+    background-size: cover;
+}
+
+.softwaretesting_card_background {
+    background-image: url('../assets/courses/software\ testing\ dark.png');
+}
+
+.mysql_card_background {
+    background-image: url('../assets/courses/mysqldb\ dark.png');
+}
+
+.andriod_card_background {
+    background-image: url("../assets/courses/andriod\ programming\ dark.png");
+}
+
+.djanjo_card_background {
+    background-image: url("../assets/courses/django\ web\ dark.png");
+}
+
+.j2ee_card_background {
+    background-image: url("../assets/courses/j2ee\ dark.png");
+}
+
+.webdevelopment_card_background {
+    background-image: url("../assets/courses/webdevops\ dark.png");
+}
+
+.button_course_card {
+    position: absolute;
+    top: 80%;
+    right: 40%;
+    border: none;
+    background: black;
+    padding: 0px 18px;
+    color: white;
+    font-size: 1rem;
+    transition:0.3s linear;
+}
+.button_course_card:hover{
+    background:white;
+    color:black;
+    transform:scale(1.1);
+    border:1px solid black;
+}
+/* footer*******/
+.footer_main_container {
+    background: black;
+}
+
+.part_one_footer {
+    background: #141414;
+    overflow:hidden;
+    position:relative;
+    padding:10px;
+    display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.image_footer_logo {
+    max-height: 11rem;
+}
+
+.para_address_footer {
+    font-size: 0.8rem;
+    color: #dcdcdc;
+}
+
+.collectino_icons_footer .fa {
+    transition: 0.2s ease-in;
+}
+
+.heading_footer_folow_us,
+.subscribe_heading_footer {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.footer_social_media_facebook,
+.footer_social_media_twitter,
+.footer_social_media_googleplus,
+.footer_social_media_instagram,
+.footer_social_media_linkedin {
+    background-color: #3B5998;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    margin: 0.1rem 0.2rem;
+}
+
+.footer_social_media_twitter {
+    background-color: #55ACEE;
+    padding: 12px 12px;
+}
+
+.footer_social_media_googleplus {
+    background-color: #DD4B39;
+    padding: 12px 10px;
+}
+
+.footer_social_media_linkedin {
+    background-color: #0976B4;
+    padding: 12px 13px;
+}
+
+.footer_social_media_instagram {
+    background: #B7242A;
+    padding: 12px 13px;
+}
+
+.collectino_icons_footer .fa:hover {
+    transform: scale(1.2);
+}
+
+/*part2---footer*/
+.part_two_footer {
+    padding: 1rem;
+}
+
+.calling_footer_cont_1 {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.calling_footer_cont_1 i {
+    align-self: center;
+    margin: 10px;
+    margin-top: -10px;
+    font-size: 1.5rem;
+}
+
+.container_mobile_para_footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_footer_1 {
+    font-size: 1rem;
+    color: white;
+}
+
+.para_mobile_give_us_a_call {
+    color: white;
+    font-size: 0.7rem;
+    margin-top: -10px;
+    margin-left: 8px;
+}
+
+.para_subscribe_footer_2 {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer_input_text_ {
+    background-image: url("data:image/png;base64,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");
+    background-size: 40px;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: -5px 10px;
+    background-color: #2E2E2E;
+    border: none;
+    border-radius: 10px;
+    min-width: 70%;
+    padding: 0.5rem 1rem;
+    padding-right: 40px;
+    color: white;
+    outline: none;
+}
+
+.hrline_footer {
+    border: 1px solid #9d9d9d;
+}
+
+/*part 3*/
+.part_three_footer {
+    padding: 1rem;
+    margin: 2rem 0rem;
+}
+
+.address_footer_cont_3 {
+    display: flex;
+}
+
+.part_three_footer i {
+    align-self: center;
+    margin-top: -20px;
+    font-size: 1.5rem;
+}
+
+.container_links_footer {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container_links_part {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_links {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #9d9d9d;
+    margin: 6px 8px;
+}
+
+.footer_links:hover {
+    color: #d1d1d1;
+    text-decoration: none;
+}
+.collectino_icons_footer .fa {
+    transition: 0.2s ease-in;
+}
+/*last part*/
+.last_part_footer {
+    background-color: #1d1c1c;
+    padding: 10px 1rem;
+    margin-top: -35px;
+}
+
+.footer_copyright_text {
+    font-size: 0.8rem;
+    color: #b2b2b2;
+}
+
+.last_footer {
+    font-size: 0.6rem;
+    margin: 0px 10px;
+}
+
+@media only screen and (min-width:688px) {
+    /*****nav bar*******/
+    .navbar-brand {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.8rem !important;
+        letter-spacing: 1px !important;
+    }
+
+    .nav_logo {
+        margin-top:-13px;
+        width: 55px;
+        height: 100%;
+    }
+
+    .nav_icons {
+        margin-bottom: -2px !important;
+    }
+
+    .nav_items_home {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav {
+        gap: 10px;
+    }
+    .container_main_courses_page {
+        padding: 30px;
+    }
+
+    .courses_sub_heading {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .courses_main_heading {
+        text-align: center;
+        color: #b12525;
+        font-size: 2.6rem;
+    }
+
+    .para_courses_sub {
+        font-size: 1.3rem;
+        margin: 0.5rem 2rem;
+    }
+
+    .para_courses_main {
+        font-size: 1.2rem;
+        margin: 0.5rem 2rem;
+    }
+
+    .cards_course_container {
+        padding: 0px 10rem;
+        display: flex;
+        gap: 1rem 4rem;
+        flex-wrap: wrap;
+    }
+
+    /*footer part*/
+    .footer_main_container {
+        display: flex;
+        padding: 0rem 15rem;
+        margin-top: -20px;
+        padding-bottom: 10px;
+    }
+
+    .collectino_icons_footer {
+        display: flex;
+        margin: 20px 5px;
+    }
+
+    .hrline_footer {
+        transform: rotate(180deg);
+    }
+
+    .part_one_footer {
+        max-width: 30%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top:1px;
+        max-height: 30%;
+        margin-bottom:20px;
+    }
+    .heading_footer_folow_us{
+        margin-bottom:-14px;
+    }
+
+    .part_two_footer {
+        max-width: 35%;
+        order: 1;
+    }
+
+    .part_three_footer {
+        max-width: 30%;
+        order: 0;
+    }
+
+    .part_two_footer {
+        padding: 3rem;
+    }
+
+    .last_part_footer {
+        display: flex;
+        padding: 10px 6rem;
+        justify-content: space-between;
+    }
+
+    .footer_copyright_text {
+        font-size: 0.9rem;
+    }
+
+    .last_footer {
+        font-size: 0.9rem;
+    }
+    .collectino_icons_footer .fa {
+        transition: 0.2s ease-in;
+    }
+}
